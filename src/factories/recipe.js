@@ -71,28 +71,4 @@ function recipeFactory(data) {
     }
     return { getRecipeCardDOM }
 }
-{/* <div class="card_child">
-<div class="dark_section"></div>
-<div class="desc_card_section">
-  <section class="desc_card_top">
-    <h2 class="title_receipe">Limonade de Coco</h2>
-    <div class="container_timing">
-      <img src="./img/clock.png" alt="clock icon">
-      <h2>80 min</h2>
-    </div>
-  </section>
-  <div class="desc_card_bot">
-    <div class="list_ingr">
-      Lait de coco: 400ml<br>
-      Jus de citron: 2<br>
-      Créme de coco: 4 cuillères<br>
-      Sucre: 20g<br>
-      Glaçons: 2<br>
-    </div>
-    <div class="recipe">
-      <p>Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu'à avoir la consistence désirée.</p>
-    </div>
-  </div>
-</div>
 
-</div>  */}
