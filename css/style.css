@@ -103,7 +103,7 @@ header {
   gap: 0px 20px;
 }
 
-#card_filter_choice {
+.card_filter_choice {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -123,7 +123,7 @@ header {
 #card_filter_choice_open {
   width: 50%;
 }
-#card_filter_choice h4 {
+.card_filter_choice h4 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -131,7 +131,7 @@ header {
   line-height: 17px;
   color: #ffffff;
 }
-#card_filter_choice > h3 {
+.card_filter_choice > h3 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -139,7 +139,7 @@ header {
   line-height: 17px;
   color: #ffffff;
 }
-#card_filter_choice span {
+.card_filter_choice span {
   margin-left: 15px;
 }
 
@@ -162,25 +162,25 @@ header {
   margin-top: 25px;
 }
 
-#card_child {
+.card_child {
   width: 30%;
   background-color: rgba(231, 231, 231, 1);
   border-radius: 5px;
   overflow: hidden;
 }
 
-#dark_section {
+.dark_section {
   background-color: rgba(199, 190, 190, 1);
   height: 190px;
 }
 
-#desc_card_section {
+.desc_card_section {
   min-height: 190px;
   display: flex;
   flex-direction: column;
   padding: 20px 18px 15px 20px;
 }
-#desc_card_top {
+.desc_card_top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -201,21 +201,21 @@ header {
   margin-left: 9px;
 }
 
-#desc_card_bot {
+.desc_card_bot {
   display: flex;
   flex-direction: row;
   padding-top: 20px;
 }
-#desc_card_bot > div {
+.desc_card_bot > div {
   width: 50%;
   text-align: left;
   font-size: 15px;
 }
 
-#list_ingr{
+.list_ingr{
     line-height: 18px;
 }
 
-#recipe{
+.recipe{
     line-height: 16px;
 }
