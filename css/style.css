@@ -1,0 +1,221 @@
+/* general */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1540px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lato";
+}
+
+*:focus {
+  outline: none;
+}
+
+.space_around {
+  margin: 0 25px;
+}
+.element_blue {
+  background-color: rgba(50, 130, 247, 1);
+}
+.element_green {
+  background-color: rgba(104, 217, 164, 1);
+}
+.element_orange {
+  background-color: rgba(237, 100, 84, 1);
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#section_top_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 42px 0 17px 0;
+}
+
+.logo {
+  height: 46.292205810546875px;
+  width: 50.48472595214844px;
+  border-radius: 0px;
+}
+
+#title_general {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #d04f4f;
+}
+
+#section_search {
+  display: flex;
+  flex-direction: row;
+  background: #e7e7e7;
+  border-radius: 5px;
+  height: 69px;
+  width: 100%;
+  overflow: hidden;
+}
+#section_search input {
+  width: 93%;
+  border: none;
+  background-color: #e7e7e7;
+  padding-left: 20px;
+}
+#section_search input::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#section_search span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7%;
+}
+#section_search span img {
+  width: 32.06px;
+  height: 32.06px;
+}
+
+#filter_choice {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 25px;
+  gap: 0px 20px;
+}
+
+#card_filter_choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+}
+.card_filter_choice_top {
+  padding: 10px 20px;
+  background-color: grey;
+}
+.card_filter_choice_bottom {
+  padding: 23px 20px;
+}
+
+#card_filter_choice_open {
+  width: 50%;
+}
+#card_filter_choice h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+#card_filter_choice > h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: #ffffff;
+}
+#card_filter_choice span {
+  margin-left: 15px;
+}
+
+#filters_containers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* main */
+
+#container_cards {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px 5%;
+  margin-top: 25px;
+}
+
+#card_child {
+  width: 30%;
+  background-color: rgba(231, 231, 231, 1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#dark_section {
+  background-color: rgba(199, 190, 190, 1);
+  height: 190px;
+}
+
+#desc_card_section {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 18px 15px 20px;
+}
+#desc_card_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.title_receipe {
+  width: 70%;
+  font-size: 21px;
+}
+.container_timing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container_timing > h2 {
+  font-weight: bold;
+  font-size: 21px;
+  margin-left: 9px;
+}
+
+#desc_card_bot {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+#desc_card_bot > div {
+  width: 50%;
+  text-align: left;
+  font-size: 15px;
+}
+
+#list_ingr{
+    line-height: 18px;
+}
+
+#recipe{
+    line-height: 16px;
+}
