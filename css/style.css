@@ -120,7 +120,7 @@ header {
   padding: 23px 20px;
 }
 
-#card_filter_choice_open {
+.card_filter_choice_open {
   width: 50%;
 }
 .card_filter_choice h4 {
