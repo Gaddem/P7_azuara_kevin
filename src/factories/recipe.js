@@ -53,7 +53,7 @@ function recipeFactory(data) {
 
 
         botInLightBox.appendChild(ingredientList);
-            descRecipeConatiner.appendChild(descRecipe)
+            descRecipeConatiner.appendChild(descRecipe);
         botInLightBox.appendChild(descRecipeConatiner);
 
 
