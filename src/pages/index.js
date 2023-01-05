@@ -16,7 +16,7 @@ inputTop.addEventListener('input',(e)=>{
         fetchDataSearch(e.target.value);
         init(tempoArray);
     }else{
-        init(recipes)
+        init(recipes);
     }
 })
 
