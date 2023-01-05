@@ -3,8 +3,7 @@ function recipeFactory(data) {
 
     //Création d'une card de recette
     function getRecipeCardDOM() {
-        // const article = document.createElement( 'article' );
-        // return (article);
+
         const card = document.createElement("div");
         card.classList.add("card_child");
 
@@ -32,6 +31,7 @@ function recipeFactory(data) {
 
         const ingredientList = document.createElement("div");
         ingredientList.classList.add("list_ingr");
+
         const descRecipeConatiner = document.createElement("div");
         descRecipeConatiner.classList.add("recipe");
         const descRecipe = document.createElement("p");
@@ -53,6 +53,7 @@ function recipeFactory(data) {
 
 
         botInLightBox.appendChild(ingredientList);
+        fetch_quantity(ingredients,ingredientList);
             descRecipeConatiner.appendChild(descRecipe);
         botInLightBox.appendChild(descRecipeConatiner);
 

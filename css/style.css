@@ -211,13 +211,19 @@ header {
   width: 50%;
   text-align: left;
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.list_ingr{
-    line-height: 18px;
+.list_ingr > p{
+  margin-bottom: 4px;
+  max-width: 90%;
+}
+.title_ingr{
+  font-weight: bold;
 }
 
-.recipe{
+.recipe > p{
     line-height: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
