@@ -215,20 +215,20 @@ header {
   flex-direction: column;
 }
 
-.list_ingr > p{
+.list_ingr > p {
   margin-bottom: 4px;
   max-width: 90%;
 }
-.title_ingr{
+.title_ingr {
   font-weight: bold;
 }
 
-.recipe > p{
-    line-height: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6; 
-            line-clamp: 6; 
-    -webkit-box-orient: vertical;
+.recipe > p {
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
