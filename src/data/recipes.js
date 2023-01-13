@@ -1,4 +1,10 @@
 let tempoArray = [];
+let selectionArray = [];
+let arrayIngredientFiltre = [];
+let arrayAppareilFiltre = [];
+let arrayUstensilFiltre = [];
+
+
 const recipes = [
     {
         "id": 1,
