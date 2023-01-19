@@ -37,8 +37,8 @@ function display_childrens_filter(
   childrenMain,
   displayAction,
   liste,
-  indexOfMain
 ) {
+  // console.log(childrenMain);
   let childrens = Array.from(childrenMain);
   childrens = childrens.map((chld) => Array.from(chld)).flat();
   let childrenTitle = childrens.filter((child) => child.tagName == "H3");
@@ -46,6 +46,8 @@ function display_childrens_filter(
   let childrenSpan = childrens.filter((child) => child.tagName == "SPAN");
   liste.forEach((element) => {
     element.style.display = displayAction == "open" ? "flex" : "none";
+    element.style.paddingBottom = displayAction == "open" ? "10px" : 0;
+    element.style.flexWrap = "wrap";
   });
   childrenTitle.forEach((title) => {
     title.style.display = displayAction == "open" ? "none" : "flex";
@@ -60,6 +62,7 @@ function display_childrens_filter(
     span.style.transform =
       displayAction == "open" ? "rotate(180deg)" : "rotate(0deg)";
   });
+  display_data_list();
 }
 
 
@@ -71,7 +74,8 @@ function open_input_filter(typeOpen,liste){//Fonction principale d'ouverture et 
 
    
     filtres_to_close.forEach(filClose=> {
-        filClose.style.width = "fit-content";
+        filClose.style.width = "auto";
+        
         filClose.style.borderBottomLeftRadius = "5px";
         filClose.style.borderBottomRightRadius = "5px";  
         let filCloseChildrens = Array.from(filClose.children).map(child => child.children);
@@ -79,7 +83,7 @@ function open_input_filter(typeOpen,liste){//Fonction principale d'ouverture et 
         display_childrens_filter(filCloseChildrens,"close",listes_close);
     });
     filtre_to_open.forEach(filOpen => {
-        filOpen.style.width = "50%";
+        filOpen.boxSizing=" border-box";
         filOpen.style.borderBottomLeftRadius = 0;
         filOpen.style.borderBottomRightRadius = 0;
         let filOpenChildrens =  Array.from(filOpen.children).map(child => child.children);
