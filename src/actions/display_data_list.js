@@ -1,22 +1,19 @@
-let ingred = ["Lait de coco","Jus de citron","Crème de coco","Sucre"];
-let appareil = ["Lait de coco","Jus de citron"];
-let ustens = ["Lait de coco"];
 const allList = Array.from(document.querySelectorAll(".list-select")).map((liste)=>{
     return {"type":liste.parentNode.getAttribute("data-name") ,"liste":liste,"parent":liste.parentNode}
 });
 
-function display_data_list(){
+function display_data_list(indexSearch,arraySearch){
     allList.forEach((dataToDisplay) => {
         dataToDisplay.liste.innerHTML = ``;
         let data_liste =[];
         switch (dataToDisplay.type) {
-            case "filt_ingr":data_liste= ingred;
+            case "filt_ingr":data_liste= indexSearch==1 && arraySearch? Unification(arraySearch) : Unification(arrayIngredientDisplay)
             break;
-            case "filt_app":data_liste= appareil;
+            case "filt_app":data_liste= indexSearch==2 && arraySearch? Unification(arraySearch) : Unification(arrayAppareilDisplay);
             break;
-            case "filt_ust":data_liste= ustens;
+            case "filt_ust":data_liste= indexSearch==3 && arraySearch? Unification(arraySearch) : Unification(arrayUstensilDisplay);
             break;
-            default:
+            default:data_liste=[];
                 break;
         }
         data_liste.forEach((child) => { 
@@ -27,4 +24,3 @@ function display_data_list(){
     });
 }
 
-display_data_list();

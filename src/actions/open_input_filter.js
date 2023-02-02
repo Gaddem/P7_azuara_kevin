@@ -74,8 +74,8 @@ function open_input_filter(typeOpen,liste){//Fonction principale d'ouverture et 
 
    
     filtres_to_close.forEach(filClose=> {
+        filClose.children[0].children[1].value ="";//On vide le champs input
         filClose.style.width = "auto";
-        
         filClose.style.borderBottomLeftRadius = "5px";
         filClose.style.borderBottomRightRadius = "5px";  
         let filCloseChildrens = Array.from(filClose.children).map(child => child.children);

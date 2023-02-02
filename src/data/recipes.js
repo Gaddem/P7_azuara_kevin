@@ -1,8 +1,14 @@
 let tempoArray = [];
-let selectionArray = [];
-let arrayIngredientFiltre = [];
-let arrayAppareilFiltre = [];
-let arrayUstensilFiltre = [];
+
+let arrayIngredientDisplay = [];
+let selectedIngredient = [];
+
+let arrayAppareilDisplay = [];
+let selectedAppareil = [];
+
+let arrayUstensilDisplay = [];
+let selectedUstensil = [];
+
 
 
 const recipes = [

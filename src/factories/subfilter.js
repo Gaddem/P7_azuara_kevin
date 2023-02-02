@@ -7,10 +7,10 @@ function childListeFactory(name,lengthAllChildren,parent) {
         card.style.width="100%";
         parent.style.width = "auto";
       }else if(lengthAllChildren ==2){
-        card.style.width="45%";
+        card.style.width="40%";
         parent.style.width = parentIsOpen?"33%":"auto";
       }else if(lengthAllChildren > 2){
-        card.style.width="30%";
+        card.style.width="25%";
         parent.style.width = parentIsOpen?"40%":"auto";
       }else{
         parent.style.width = "auto";
@@ -19,8 +19,7 @@ function childListeFactory(name,lengthAllChildren,parent) {
       card.style.display="flex";
       card.style.height="20px";
       card.style.justifyContent="flex-start";
-      card.style.margin="10px";
-
+      card.style.margin="10px 10px 10px 18px";
       const nameChild = document.createElement("p");
       nameChild.style.color="white";
       nameChild.style.fontWeight="400";
