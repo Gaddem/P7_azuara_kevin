@@ -12,7 +12,7 @@ function fetchDataSort(arrayToFilter) {
    }).map((recipe)=>{
     return recipe;
    });
-//    console.log(sortIngr);
+
    let sortAppareil=  selectedAppareil?.length<1 ? sortIngr : sortIngr.filter((recipe)=>{
     if(selectedAppareil.includes(recipe.appliance.toLowerCase())){
         return recipe;
