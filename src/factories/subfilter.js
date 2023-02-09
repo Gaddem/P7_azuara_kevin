@@ -25,7 +25,7 @@ function childListeFactory(name,lengthAllChildren,parent) {
       nameChild.style.fontWeight="400";
       nameChild.textContent = name;
       card.onclick = function(){
-          ToogleFilter(parent.getAttribute("data-name"),"add",name);
+          ToogleFilter(parent.getAttribute("data-name"),name);
       } ;
       card.appendChild(nameChild);  
       return card;

@@ -21,7 +21,7 @@ function init(diffrentArray) {
 
   //On filtre le tableau de recette avec les options de filtre qui ont été séléctionnés
   arrayData = fetchDataSort(arrayData);
-
+console.log("arrayData ",arrayData);
   //On initialise les tableaux qui contiendront les filtres a afficher dnas les listes
   arrayIngredientDisplay=[];
   arrayAppareilDisplay=[];
