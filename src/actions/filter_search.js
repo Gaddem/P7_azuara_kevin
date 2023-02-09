@@ -5,7 +5,6 @@ const allInputFilter= Array.from(document.querySelectorAll(".input_in_filter")).
 const testAllFilterInput = document.querySelectorAll(".input_in_filter");
 testAllFilterInput.forEach(input => {
     input.addEventListener("input", (e) => {
-        console.log(e.target.parentNode.parentNode.getAttribute("data-name"));
         if(e.target.value?.length == 0){
             display_data_list()
         }else{

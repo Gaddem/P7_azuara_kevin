@@ -38,7 +38,6 @@ function display_childrens_filter(
   displayAction,
   liste,
 ) {
-  // console.log(childrenMain);
   let childrens = Array.from(childrenMain);
   childrens = childrens.map((chld) => Array.from(chld)).flat();
   let childrenTitle = childrens.filter((child) => child.tagName == "H3");

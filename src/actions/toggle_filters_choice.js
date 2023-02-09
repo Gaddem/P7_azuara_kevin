@@ -1,4 +1,4 @@
-function ToogleFilter(typeListe,action,word=""){
+function ToogleFilter(typeListe,action,word=""){//Action d'appui sur un filtre depuis la liste de sélection
     let index=0;
     let arrayToAction =[];
     switch (typeListe) {
@@ -16,20 +16,18 @@ function ToogleFilter(typeListe,action,word=""){
             break;
     }
     displaySubFiltersChoice();
-    // fetchDataSort(recipes);
-    // display_data_list(index,arrayToAction);
-    
+    display_data_list()
     return;
 }
 
 function PushIn(arrayToPush,word){
     arrayToPush.push(word.toLowerCase());
-    // console.log(selectedIngredient);
     return arrayToPush;
 }
 function GetOut(arrayToSplice,word){
     let indexToDelete = arrayToSplice.indexOf(word.toLowerCase());
     arrayToSplice.splice(indexToDelete,1);
     displaySubFiltersChoice();
+    display_data_list()
     return arrayToSplice;
 }

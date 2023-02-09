@@ -1,5 +1,4 @@
 function subFilterFactory(name,classBackground,arrayToSplice) {
-    console.log(name);
     //Création d'un filtre sélectionné
     function getChildsubFilterDOM() {
       const card = document.createElement("div");
