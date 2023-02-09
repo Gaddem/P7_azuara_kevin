@@ -10,7 +10,7 @@ function displayRecipe(recipeArray) {
 }
 
 function Unification(array){//Permet de supprimer les éléments dupliqués d'un tableau et retourne un tableau avec des valeurs uniques
-  array = array.map(v => v.toLowerCase()).filter((item, i, ar) => ar.indexOf(item) === i);
+  array = array.map(v => v?.toLowerCase()).filter((item, i, ar) => ar.indexOf(item) === i);
   array = array.map((newElement)=>{ return newElement.charAt(0).toUpperCase()+ newElement.substr(1);});
   return array;
 }

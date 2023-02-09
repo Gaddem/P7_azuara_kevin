@@ -99,7 +99,7 @@ header {
   overflow: hidden;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   gap: 0px 20px;
 }
 
@@ -114,12 +114,11 @@ header {
 }
 .card_filter_choice_top {
   padding: 10px 20px;
-  background-color: grey;
+  margin-top: 25px;
 }
 .card_filter_choice_bottom {
   display: flex;
   position: relative;
-  /* max-width: 50%; */
   width: fit-content;
 }
 .content-row{
