@@ -20,11 +20,16 @@ function display_data_list(indexSearch,arraySearch){
             default:data_liste=[];
                 break;
         }
-        data_liste.forEach((child) => { 
-          const childModel = childListeFactory(child,data_liste.length,dataToDisplay.parent,dataToDisplay.type);
-          const childCardDOM = childModel.getChildCardDOM();
-          dataToDisplay.liste.appendChild(childCardDOM);
-        });
+        if(data_liste.length>0){
+            data_liste.forEach((child) => { 
+                const childModel = childListeFactory(child,data_liste.length,dataToDisplay.parent,dataToDisplay.type);
+                const childCardDOM = childModel.getChildCardDOM();
+                dataToDisplay.liste.appendChild(childCardDOM);
+              });
+        }else{
+            dataToDisplay.liste.style.paddingBottom ="3px";
+        }
+        
     });
 }
 
