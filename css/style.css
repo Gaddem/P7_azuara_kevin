@@ -99,7 +99,6 @@ header {
   overflow: hidden;
   flex-wrap: wrap;
   align-items: flex-start;
-  /* margin-top: 25px; */
   gap: 0px 20px;
 }
 
@@ -264,4 +263,14 @@ header {
   -webkit-line-clamp: 6;
   line-clamp: 6;
   -webkit-box-orient: vertical;
+}
+
+
+.no_result{
+  font-size:22px;
+  text-align: center;
+  width: 100%;
+  margin: 200px 0;
+  display: none;
+
 }

@@ -1,12 +1,19 @@
 function displayRecipe(recipeArray) {
   //Affichage des recettes en fonction d'un tableau qui les contient
   const recipesSection = document.getElementById("container_cards");
+  const nothingText = document.getElementById("no_result");
   recipesSection.innerHTML = ``;
-  recipeArray.forEach((recipe) => {
-    const recipeModel = recipeFactory(recipe);
-    const recipeCardDOM = recipeModel.getRecipeCardDOM();
-    recipesSection.appendChild(recipeCardDOM);
-  });
+  if(recipeArray?.length==0){
+    nothingText.style.display = "block";
+  }else{
+    nothingText.style.display = "none";
+    recipeArray.forEach((recipe) => {
+      const recipeModel = recipeFactory(recipe);
+      const recipeCardDOM = recipeModel.getRecipeCardDOM();
+      recipesSection.appendChild(recipeCardDOM);
+    });
+
+  }
 }
 
 function Unification(array){//Permet de supprimer les éléments dupliqués d'un tableau et retourne un tableau avec des valeurs uniques

@@ -30,13 +30,10 @@
         </span>
       </div>
 
-      <div id="filter_choice">
-
-
-      </div> 
+      <div id="filter_choice"></div>
 
       <div id="filters_containers">
-        <div data-parent ="close" data-name="filt_ingr" class="element_blue card_filter_choice_bottom card_filter_choice">
+        <div data-parent="close" data-name="filt_ingr" class="element_blue card_filter_choice_bottom card_filter_choice">
           <div class="content-row">
             <h3>Ingrédients</h3>
             <input class="input_in_filter element_blue" type="text">
@@ -44,10 +41,9 @@
               <img src="img/chvr_down.png" alt="icon close">
             </span>
           </div>
-          <div class="list-select element_blue">
-          </div>
+          <div class="list-select element_blue"></div>
         </div>
-        <div data-parent ="close" data-name="filt_app" class="element_green space_around card_filter_choice_bottom card_filter_choice">
+        <div data-parent="close" data-name="filt_app" class="element_green space_around card_filter_choice_bottom card_filter_choice">
           <div class="content-row">
             <h3>Appareils</h3>
             <input class="input_in_filter element_green" type="text">
@@ -55,23 +51,23 @@
               <img src="img/chvr_down.png" alt="icon close">
             </span>
           </div>
-          <div class="list-select element_green">
-          </div>
+          <div class="list-select element_green"></div>
         </div>
-        <div data-parent ="close" data-name="filt_ust" class="element_orange card_filter_choice_bottom card_filter_choice">
+        <div data-parent="close" data-name="filt_ust" class="element_orange card_filter_choice_bottom card_filter_choice">
           <div class="content-row">
             <h3>Ustensiles</h3>
             <input class="input_in_filter element_orange" type="text">
-            <span class="container_close">  
+            <span class="container_close">
               <img src="img/chvr_down.png" alt="icon close">
             </span>
           </div>
-          <div class="list-select element_orange">
-          </div>
+          <div class="list-select element_orange"></div>
         </div>
       </div>
     </header>
+    <h2 class="no_result" id="no_result">AUCUN RESULTAT TROUVÉS</h2>
     <main id="container_cards"></main>
+
   </body>
   <script src="src/data/recipes.js"></script>
   <script src="src/actions/toggle_filters_choice.js"></script>
@@ -86,7 +82,7 @@
 
   <script src="src/actions/filter_search.js"></script>
   <script src="src/factories/recipe.js"></script>
-  
+
   <script src="src/pages/index.js"></script>
 
 </html>
